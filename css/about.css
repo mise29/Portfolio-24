@@ -1,0 +1,317 @@
+@charset "utf-8";
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    height: 100vh;
+}
+
+.sticky {
+    height: 94vh;
+    /* border: 1px solid #000; */
+    margin: 1rem;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.16);
+    border-radius: 2rem;
+}
+
+/* .item 1 nav */
+ul {
+    padding: 0;
+    text-align: center;
+}
+
+nav i,
+p {
+    text-align: center;
+    margin: 0;
+}
+
+nav i {
+    font-size: 1.4rem;
+    margin-top: 1.5rem;
+}
+
+nav p {
+    font-size: .7rem;
+    margin-top: 6px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+}
+
+i::before {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 200%;
+    background-image: linear-gradient(45deg, #895b8a 0%, #f6bfbc 52%, #80aba9 90%);
+}
+
+.sticky i:hover {
+    transform: scale(1.2);
+    transition-duration: .4s;
+}
+
+@media screen and (max-width:600px) {
+
+    /* display grid */
+    .grid {
+        grid-template: 64px 1fr / 1fr;
+    }
+
+    .icon {
+        display: flex;
+        padding: 0 28px;
+        justify-content: space-around;
+        margin-top: 10px;
+    }
+
+    ul p {
+        display: none;
+    }
+
+    nav i {
+        font-size: 1.4rem;
+    }
+
+    .fa-solid,
+    .fa-brands {
+        margin: 0;
+        padding: 0;
+    }
+
+    .sticky {
+        height: 8vh;
+        margin: .68rem;
+    }
+}
+
+.about_more {
+    padding: 20px 20px 20px 10px;
+    overflow-y: auto;
+    height: 100vh;
+    scrollbar-width: none;
+}
+
+.page_title {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.page_title p {
+    margin: 0;
+    font-size: 1.6rem;
+    letter-spacing: 1.5px;
+    margin-right: 8px;
+}
+
+.page_title i {
+    font-size: 1.2rem;
+}
+
+/* about grid */
+.about_grid {
+    padding: 20px 0;
+}
+
+.about_item {
+    /* border: 1px solid #000; */
+}
+
+/* about profile */
+
+.item_profile {
+    display: grid;
+    grid-template: 50vh / 1fr 1fr 1fr;
+    gap: 20px;
+    align-items: center;
+}
+
+.profile_image {
+    width: 180px;
+    height: 180px;
+    border: 1px solid #000;
+    transform: rotate(45deg);
+    position: relative;
+    margin: 50px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.16);
+}
+
+.profile_text {
+    letter-spacing: 1.5px;
+    line-height: 1.6;
+}
+
+.profile_text h2 {
+    font-weight: normal;
+    text-align: left;
+}
+
+.profile_text li {
+    list-style: none;
+    text-align: left;
+}
+
+@media screen and (max-width:768px) {
+    .item_profile {
+        grid-template: 40vh / 1fr 1fr;
+    }
+
+    .profile_image {
+        width: 160px;
+        height: 160px;
+    }
+
+    .my_list {
+        padding-left: 0;
+    }
+
+    .item_skills {
+        margin-top: -20px;
+    }
+
+    .about_more {
+        padding-left: 20px;
+    }
+
+    .page_title {
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width:520px) {
+    .profile_image {
+        width: 140px;
+        height: 140px;
+    }
+
+    .profile_text h2 {
+        font-size: 1.2rem;
+    }
+
+    .profile_text li {
+        font-size: .8rem;
+    }
+}
+
+/* about skills  */
+.item_skills h2 {
+    font-weight: normal;
+    text-align: left;
+    letter-spacing: 1.5px;
+    padding: 20px;
+    margin: 0;
+}
+
+.bar {
+    display: grid;
+    grid-template: 28vh / 1fr 1fr;
+    padding: 0 20px;
+    gap: 50px;
+    align-items: center;
+}
+
+.bar-chart-002 {
+    font-size: .9em;
+}
+
+.bar-chart-002>div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.bar-chart-002 dt {
+    width: 55px;
+    min-width: 55px;
+}
+
+.bar-chart-002 dd {
+    width: 100%;
+    margin: 0;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+}
+
+.bar-chart-002 span {
+    display: inline-block;
+    padding-right: 15px;
+    border-radius: inherit;
+    background-color: #80aba9;
+    color: #fff;
+    line-height: 20px;
+    text-align: right;
+    white-space: nowrap;
+    animation: anima-bar-chart-002 1.2s ease;
+}
+
+@keyframes anima-bar-chart-002 {
+    from {
+        width: 0;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .item_profile {
+        padding-top: 40px;
+        grid-template: 25vh 25vh / 1fr;
+        gap: 68px;
+    }
+
+    .profile_image {
+        margin: 0 auto;
+    }
+
+    .profile_text {
+        margin: 0 auto;
+    }
+
+    .item_skills h2 {
+        font-size: 1.2rem;
+    }
+
+    .bar {
+        grid-template: 28vh 28vh / 1fr;
+        padding-top: 20px;
+        gap: 40px;
+        align-items: center;
+    }
+    .about_more {
+        padding: 0;
+    }
+    .page_title {
+        margin-top: 14px;
+        margin-left: 20px;
+    }
+    .page_title p {
+        font-size: 1.4rem;
+    }
+    .page_title i {
+        font-size: 1.2rem;
+    }
+}
+
+/* about history */
+.item_history {
+    position: relative;
+}
+
+.item_history h2 {
+    font-weight: normal;
+    text-align: left;
+    letter-spacing: 1.5px;
+    padding: 20px;
+}
+
+.item_history img {
+    position: absolute;
+    left: 10%;
+    height: 26rem;
+}
