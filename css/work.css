@@ -86,6 +86,7 @@ i::before {
         margin: 0;
         padding: 0;
     }
+
     .sticky {
         height: 46px;
         margin: .68rem;
@@ -93,7 +94,7 @@ i::before {
 }
 
 .page_title {
-    margin-top: 10px;
+    margin-top: 20px;
     display: flex;
     align-items: center;
 }
@@ -129,28 +130,62 @@ i::before {
 /* .works_grid */
 
 .works_grid {
-    display: grid;
-    grid-template: 8vh 62vh 62vh / 1fr 1fr;
-    /* grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); */
-    gap: 28px;
-    flex: 1;
-    padding: 20px 20px 20px 10px;
     overflow-y: auto;
-    height: 100vh;
     scrollbar-width: none;
+    padding: 20px 10px 20px 8px;
+}
+
+.content_flex {
+    margin-top: 20px;
+    display: grid;
+    grid-template: repeat(3, auto) / repeat(2, 1fr);
+    width: calc(100vw - 140px);
+    gap: 20px;
+    height: 100vh;
 }
 
 .works_item {
-    background: #fff;
-    padding: 20px;
-    border: 1px solid #ccc;
+    height: 50vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+    align-items: center;
     border-radius: 20px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.16);
+}
+
+@media (max-width: 800px) {
+    .content_flex {
+        grid-template-columns: 1fr;
+    }
+    .works_item {
+        height: 38vh;
+    }
+}
+
+@media (min-width: 801px) and (max-width: 1200px) {
+    .works_item {
+        height: 38vh;
+    }
+}
+@media (min-width: 801px) and (max-width: 980px) {
+    .works_item {
+        height: 30vh;
+    }
+}
+
+@media (min-width: 1201px) {
+    .works_item {
+        height: 50vh;
+    }
 }
 
 @media (max-width: 600px) {
     .works_grid {
-        grid-template: repeat(4, 180px) / 1fr;
         padding: 20px 16px 10px 16px;
+    }
+    .content_flex {
+        width: calc(100vw - 32px);
     }
 
     .flex {
@@ -162,115 +197,25 @@ i::before {
     }
 }
 
-@media (min-width: 601px) and (max-width: 1200px) {
-    .works_grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (min-width: 1201px) {
-    .works_grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-.works_item {
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: top;
-    align-items: center;
-    padding-bottom: 60px;
-    height: 280px;
-    position: relative;
-}
-
-@media screen and (max-width:1120px) {
-    .works_grid {
-        grid-template: 8vh 52vh 52vh / 1fr 1fr;
-    }
-
+@media (max-width: 480px) {
     .works_item {
-        height: 220px;
+        height: 32vh;
     }
 }
-@media screen and (max-width:1000px) {
-    .works_grid {
-        grid-template: 8vh 50vh 50vh / 1fr 1fr;
-    }
-
+@media (max-width: 400px) {
     .works_item {
-        height: 200px;
+        height: 28vh;
     }
 }
-@media screen and (max-width:900px) {
-    .works_grid {
-        grid-template: 8vh 46vh 46vh / 1fr 1fr;
-    }
 
-    .works_item {
-        height: 180px;
-    }
-}
-@media screen and (max-width:768px) {
-    .works_grid {
-        grid-template: 8vh 42vh 42vh / 1fr 1fr;
-    }
-
-    .works_item {
-        height: 160px;
-    }
-}
-@media screen and (max-width:650px) {
-    .title_600 {
-        display: none;
-    }
-    .works_grid {
-        grid-template: 8vh 68vh 68vh / 1fr;
-    }
-
-    .works_item {
-        height: 268px;
-    }
-}
-@media screen and (max-width:460px) {
-    .works_grid {
-        grid-template: 8vh repeat(6,34vh) / 1fr;
-    }
-
-    .works_item {
-        height: 200px;
-    }
-}
-@media screen and (max-width:350px) {
-    .works_grid {
-        grid-template: 6vh 48vh 48vh / 1fr;
-    }
-
-    .works_item {
-        height: 160px;
-    }
-}
-@media screen and (max-width:310px) {
-    .works_grid {
-        grid-template: 6vh 46vh 46vh / 1fr;
-    }
-
-    .works_item {
-        height: 140px;
-    }
-}
-.works_text {
-    position: absolute;
-    bottom: 10px;
-    left: 20px;
-    right: 20px;
-    padding: 10px;
+.content_flex p {
+    padding-bottom: 20px;
     text-align: center;
 }
 
 .works_text p {
     letter-spacing: 1.5px;
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: #000;
 }
 
