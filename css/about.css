@@ -87,7 +87,7 @@ i::before {
     }
 
     .sticky {
-        height: 8vh;
+        height: 46px;
         margin: .68rem;
     }
 }
