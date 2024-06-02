@@ -96,7 +96,7 @@ i::before {
 
 .scrolldown {
     position: absolute;
-    bottom: 100px;
+    bottom: 120px;
     /* left: 60px; */
     left: 50%;
 }
@@ -214,7 +214,7 @@ i::before {
         flex: 0 0 90vh;
     }
     .form_box {
-        flex: 0 0 66vh;
+        flex: 0 0 80vh;
     }
 
     /* .works_box,
@@ -225,7 +225,7 @@ i::before {
 
 .form_box,
 #about_page {
-    margin-top: 80px;
+    margin-top: 40px;
 }
 
 .section_title {
