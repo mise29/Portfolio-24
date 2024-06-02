@@ -134,19 +134,22 @@ i::before {
     align-items: center;
 }
 
-.profile_image {
-    width: 180px;
-    height: 180px;
+.item_profile {
     border: 1px solid #000;
-    transform: rotate(45deg);
+}
+
+.profile_image {
+    width: 100%;
+    height: 50vh;
+    border-right: 1px solid #000;
+    /* transform: rotate(45deg); */
     position: relative;
-    margin: 50px;
-    box-shadow: 0 0 12px rgba(0, 0, 0, 0.16);
 }
 
 .profile_text {
     letter-spacing: 1.5px;
     line-height: 1.6;
+    margin: 0 20px;
 }
 
 .profile_text h2 {
@@ -159,62 +162,19 @@ i::before {
     text-align: left;
 }
 
-@media screen and (max-width:768px) {
-    .item_profile {
-        grid-template: 40vh / 1fr 1fr;
-    }
-
-    .profile_image {
-        width: 160px;
-        height: 160px;
-    }
-
-    .my_list {
-        padding-left: 0;
-    }
-
-    .item_skills {
-        margin-top: -20px;
-    }
-
-    .about_more {
-        padding-left: 20px;
-    }
-
-    .page_title {
-        margin: 20px;
-    }
-}
-
-@media screen and (max-width:520px) {
-    .profile_image {
-        width: 220px;
-        height: 220px;
-        border: none;
-    }
-
-    .profile_text h2 {
-        font-size: 1.2rem;
-    }
-
-    .profile_text li {
-        font-size: 1.2rem;
-    }
-}
-
 /* about skills  */
 .item_skills h2 {
     font-weight: normal;
     text-align: left;
     letter-spacing: 1.5px;
-    padding: 20px;
     margin: 0;
+    margin: 40px 0 20px 0;
 }
 
 .bar {
     display: grid;
     grid-template: 28vh / 1fr 1fr;
-    padding: 0 20px;
+    padding: 0;
     gap: 50px;
     align-items: center;
 }
@@ -230,8 +190,8 @@ i::before {
 }
 
 .bar-chart-002 dt {
-    width: 55px;
-    min-width: 55px;
+    width: 80px;
+    min-width: 80px;
 }
 
 .bar-chart-002 dd {
@@ -259,42 +219,65 @@ i::before {
     }
 }
 
-@media screen and (max-width:450px) {
+@media screen and (max-width:900px) {
     .item_profile {
-        padding-top: 40px;
-        grid-template: 25vh 25vh / 1fr;
-        gap: 68px;
+        grid-template-columns: 1fr 1fr;
     }
 
-    .profile_image {
-        margin: 0 auto;
+    .pi_02 {
+        display: none;
+    }
+}
+
+@media screen and (max-width:768px) {
+
+    .my_list {
+        padding-left: 0;
     }
 
-    .profile_text {
-        margin-right: auto;
+    .about_more {
         padding-left: 20px;
-    }
-
-    .item_skills h2 {
-        font-size: 1.2rem;
     }
 
     .bar {
         grid-template: 20vh 20vh / 1fr;
-        padding-top: 0;
-        gap: 0;
+        padding: 28px 0;
+        gap: 20px;
         align-items: center;
     }
-    .about_more {
-        padding: 0;
+}
+
+@media screen and (max-width:520px) {
+    .item_profile {
+        grid-template: 25vh 25vh / 1fr;
     }
+
+    .profile_image {
+        border: none;
+    }
+
+    .profile_text h2 {
+        font-size: 1.2rem;
+    }
+
+    .profile_text li {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .item_skills h2 {
+        font-size: 1.2rem;
+    }
+
     .page_title {
         margin-top: 14px;
-        margin-left: 20px;
     }
+
     .page_title p {
         font-size: 1.4rem;
     }
+
     .page_title i {
         font-size: 1.2rem;
     }
@@ -309,11 +292,55 @@ i::before {
     font-weight: normal;
     text-align: left;
     letter-spacing: 1.5px;
-    padding: 20px;
+    margin-top: 40px;
 }
 
 .item_history img {
     position: absolute;
     left: 10%;
     height: 26rem;
+}
+
+.timeline {
+    width: 100%;
+    /* max-width: 940px; */
+    margin: 0  auto 28px auto;
+    border: 1px solid #000;
+}
+
+/* .timeline-list {
+    padding: 20px 0;
+} */
+
+.timeline-list-item {
+    display: flex;
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+.timeline-list-item .date {
+    width: 20%;
+    /* padding: 0 0 0 20px; */
+    color: #888888;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    text-align: left;
+}
+
+.timeline-list-item .content {
+    position: relative;
+    width: 80%;
+    padding: 0 20px 60px 30px;
+    border-left: 1px solid #aaaaaa;
+}
+
+.timeline-list-item .content::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -10px;
+    width: 20px;
+    height: 20px;
+    background-color: pink;
+    border-radius: 10px;
 }
