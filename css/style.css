@@ -213,6 +213,7 @@ i::before {
     .small_box {
         flex: 0 0 90vh;
     }
+
     .form_box {
         flex: 0 0 80vh;
     }
@@ -578,15 +579,20 @@ form {
 
 @media screen and (max-width:600px) {
     .contact_grid {
-        grid-template: 1fr / 1fr;
+        display: block;
     }
 
     .form_img {
         display: none;
     }
 
+    input,
+    textarea {
+        width: 86%;
+    }
+
     .auto {
-        margin: 0 auto;
+       margin-right: auto;
     }
 
     .copyName {

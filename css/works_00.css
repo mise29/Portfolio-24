@@ -9,6 +9,8 @@ body {
 }
 .back_btn a {
     text-decoration: none;
+}
+.back_btn span {
     color: #212121;
 }
 button {
@@ -92,6 +94,10 @@ button:hover {
     .worksDetail img {
         margin-top: 10px;
     }
+    .back_btn {
+        margin: 32px 20px;
+    }
+
 }
 
 .works_img {

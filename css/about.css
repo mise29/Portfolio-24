@@ -292,20 +292,14 @@ i::before {
     font-weight: normal;
     text-align: left;
     letter-spacing: 1.5px;
-    margin-top: 40px;
-}
-
-.item_history img {
-    position: absolute;
-    left: 10%;
-    height: 26rem;
+    margin: 40px 0;
 }
 
 .timeline {
     width: 100%;
     /* max-width: 940px; */
     margin: 0  auto 28px auto;
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
 }
 
 /* .timeline-list {
@@ -322,8 +316,7 @@ i::before {
     width: 20%;
     /* padding: 0 0 0 20px; */
     color: #888888;
-    font-weight: bold;
-    letter-spacing: 1.5px;
+    letter-spacing: 1px;
     text-align: left;
 }
 
@@ -332,6 +325,13 @@ i::before {
     width: 80%;
     padding: 0 20px 60px 30px;
     border-left: 1px solid #aaaaaa;
+    text-align: left;
+    font-size: 1.12rem;
+    letter-spacing: 1.5px;
+    line-height: 1.8;
+}
+.content span {
+    font-size: 1rem;
 }
 
 .timeline-list-item .content::before {
@@ -341,6 +341,32 @@ i::before {
     left: -10px;
     width: 20px;
     height: 20px;
-    background-color: pink;
+    background-color: #80aba9;
     border-radius: 10px;
+}
+
+@media screen and (min-width:1500px) {
+    .timeline-list-item .date {
+        width: 12%;
+    }
+    
+}
+@media screen and (max-width:768px) {
+    .timeline-list-item .content {
+        margin-left: auto;
+        width: 70%;
+        padding: 0 0 60px 30px;
+    }
+}
+@media screen and (max-width:540px) {
+    .timeline-list-item .date {
+        font-size: .88rem;
+        padding-right: 20px;
+    }
+    .timeline-list-item .content {
+        font-size: 1rem;
+    }
+    .content span {
+        font-size: .88rem;
+    }
 }
