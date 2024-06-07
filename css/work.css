@@ -3,6 +3,7 @@
 body {
     margin: 0;
     box-sizing: border-box;
+    font-family: serif;
 }
 
 /* 共通 */
@@ -133,6 +134,7 @@ i::before {
     overflow-y: auto;
     scrollbar-width: none;
     padding: 20px 10px 20px 8px;
+    margin-bottom: 60px;
 }
 
 .content_flex {
@@ -233,4 +235,10 @@ i::before {
 
 .Works_04 {
     background-image: url(../image/travelapp_mockup.png);
+}
+.Works_05 {
+    background-image: url(../image/portfolio2023_mockup.png);
+}
+.Works_06 {
+    background-image: url(../image/portfolio2024_mockup.png);
 }
