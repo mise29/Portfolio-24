@@ -122,21 +122,12 @@ i::before {
     padding: 20px 0;
 }
 
-.about_item {
-    /* border: 1px solid #000; */
-}
-
 /* about profile */
 
 .item_profile {
     display: grid;
-    grid-template: 50vh / 1fr 1fr 1fr;
-    gap: 20px;
+    grid-template: 40vh / 1fr;
     align-items: center;
-}
-
-.item_profile {
-    border: 1px solid #000;
 }
 
 .profile_image {
@@ -150,7 +141,7 @@ i::before {
 .profile_text {
     letter-spacing: 1.5px;
     line-height: 1.6;
-    margin: 0 20px;
+    margin: 0;
 }
 
 .profile_text h2 {
@@ -176,7 +167,7 @@ i::before {
     display: grid;
     grid-template: 28vh / 1fr 1fr;
     padding: 0;
-    gap: 50px;
+    gap: 28px;
     align-items: center;
 }
 
@@ -220,16 +211,6 @@ i::before {
     }
 }
 
-@media screen and (max-width:900px) {
-    .item_profile {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .pi_02 {
-        display: none;
-    }
-}
-
 @media screen and (max-width:768px) {
 
     .my_list {
@@ -243,14 +224,14 @@ i::before {
     .bar {
         grid-template: 20vh 20vh / 1fr;
         padding: 28px 0;
-        gap: 20px;
+        gap: 60px;
         align-items: center;
     }
 }
 
 @media screen and (max-width:520px) {
     .item_profile {
-        grid-template: 25vh 25vh / 1fr;
+        grid-template: 25vh / 1fr;
     }
 
     .profile_image {

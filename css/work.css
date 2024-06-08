@@ -6,7 +6,6 @@ body {
     font-family: serif;
 }
 
-/* 共通 */
 .grid {
     display: grid;
     grid-template-columns: 100px 1fr;
@@ -230,15 +229,15 @@ i::before {
 }
 
 .Works_03 {
-    background-image: url(../image/ibarakikankou_mockup.png);
+    background-image: url(../image/portfolio2024_mockup.png);
 }
 
 .Works_04 {
     background-image: url(../image/travelapp_mockup.png);
 }
 .Works_05 {
-    background-image: url(../image/portfolio2023_mockup.png);
+    background-image: url(../image/logo_mockup.png);
 }
 .Works_06 {
-    background-image: url(../image/portfolio2024_mockup.png);
+    background-image: url(../image/ibarakikankou_mockup.png);
 }
