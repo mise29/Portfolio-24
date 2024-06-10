@@ -302,7 +302,7 @@ button p:hover {
 .works_item {
     position: relative;
     border: 1px solid #000;
-    background: #eee;
+    background: #F9EBEA;
     border-radius: 20px;
     background-size: 60% auto;
     background-repeat: no-repeat;
@@ -319,11 +319,11 @@ button p:hover {
 }
 
 .works_03 {
-    background-image: url(../image/category_logo.png);
+    background-image: url(../image/category_banner.png);
 }
 
 .works_04 {
-    background-image: url(../image/category_portfolio.png);
+    background-image: url(../image/category_logo.png);
 }
 
 .works_item h2 {
