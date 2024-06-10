@@ -296,7 +296,7 @@ button p:hover {
     display: grid;
     grid-template: 38vh 38vh / 1fr 1fr;
     padding: 4px 40px 0 40px;
-    gap: 28px;
+    gap: 20px;
 }
 
 .works_item {

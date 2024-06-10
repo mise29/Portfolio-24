@@ -187,6 +187,12 @@ p {
     background-repeat: no-repeat;
 }
 
+@media screen and (max-width:960px) {
+    .right_code {
+        background-size: contain;
+    }
+}
+
 @media screen and (max-width:768px) {
     .works_Text {
         font-size: .88rem;
