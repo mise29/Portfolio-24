@@ -137,9 +137,6 @@ button:hover {
     display: flex;
     margin-top: 50px;
 }
-.detailText div:nth-of-type(6) {
-    margin-top: -20px;
-}
 
 .detailText h3,
 p {
