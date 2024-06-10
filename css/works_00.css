@@ -8,12 +8,15 @@ body {
 .back_btn {
     margin: 32px 60px;
 }
+
 .back_btn a {
     text-decoration: none;
 }
+
 .back_btn span {
     color: #212121;
 }
+
 button {
     font-family: serif;
     display: flex;
@@ -97,6 +100,7 @@ button:hover {
     .worksDetail img {
         margin-top: 10px;
     }
+
     .back_btn {
         margin: 32px 20px;
     }
@@ -133,6 +137,9 @@ button:hover {
     display: flex;
     margin-top: 50px;
 }
+.detailText div:nth-of-type(6) {
+    margin-top: -20px;
+}
 
 .detailText h3,
 p {
@@ -163,6 +170,21 @@ p {
 .allImage img {
     width: 40%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.color_code {
+    display: flex;
+}
+.left_title {
+    width: 30%;
+}
+
+.right_code {
+    width: 70%;
+    height: 100px;
+    background-image: url(../image/banner_color.png);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 @media screen and (max-width:768px) {
