@@ -1,0 +1,14 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.slink {
+    width: 30%;
+    margin: 0 auto;
+}
+.slink img {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}

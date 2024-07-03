@@ -1,9 +1,10 @@
 @charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
 
 body {
     margin: 0;
     box-sizing: border-box;
-    font-family: serif;
+    font-family: "Noto Sans JP", sans-serif;
 }
 
 .grid {
@@ -18,6 +19,13 @@ body {
     margin: 1rem;
     box-shadow: 0 0 12px rgba(0, 0, 0, 0.16);
     border-radius: 2rem;
+}
+
+@media screen and (min-width:600px) {
+    .sticky {
+        position: fixed;
+        width: 68px;
+    }
 }
 
 /* .item 1 nav */
@@ -63,7 +71,8 @@ nav a {
 
     /* display grid */
     .grid {
-        grid-template: 64px 1fr / 1fr;
+        grid-template-rows: 64px;
+        height: 5vh;
     }
 
     .icon {
@@ -90,6 +99,102 @@ nav a {
     .sticky {
         height: 46px;
         margin: .68rem;
+    }
+
+    ul {
+        display: flex;
+        padding: 0 28px;
+        justify-content: space-around;
+        margin-top: 10px;
+    }
+
+    ul p {
+        display: none;
+    }
+
+    nav i {
+        font-size: 1.4rem;
+    }
+
+    .fa-solid,
+    .fa-brands {
+        margin: 0;
+        padding: 0;
+    }
+
+    .item {
+        margin: 10px;
+    }
+
+    .bigbox {
+        margin-left: 10px;
+        margin-top: 0;
+    }
+
+    /* flex layout */
+    .bigbox {
+        border-radius: 1.4rem;
+    }
+
+    /* flex items */
+    .small_box {
+        flex: 0 0 90vh;
+    }
+
+    .form_box {
+        flex: 0 0 80vh;
+    }
+}
+
+@media screen and (max-width:600px) {
+
+    /* display grid */
+    .grid {
+        grid-template: 64px 1fr / 1fr;
+    }
+
+    ul {
+        display: flex;
+        padding: 0 28px;
+        justify-content: space-around;
+        margin-top: 10px;
+    }
+
+    ul p {
+        display: none;
+    }
+
+    nav i {
+        font-size: 1.4rem;
+    }
+
+    .fa-solid,
+    .fa-brands {
+        margin: 0;
+        padding: 0;
+    }
+
+    .item {
+        margin: 10px;
+    }
+
+    .bigbox {
+        margin-left: 10px;
+        margin-top: 0;
+    }
+
+    /* flex layout */
+    .bigbox {
+        border-radius: 1.4rem;
+    }
+
+    /* flex items */
+    .small_box {
+        flex: 0 0 90vh;
+    }
+
+    .form_box {
+        flex: 0 0 80vh;
     }
 }
 
@@ -137,75 +242,48 @@ nav a {
 }
 
 .content_flex {
-    margin-top: 20px;
-    display: grid;
-    grid-template: repeat(3, auto) / repeat(2, 1fr);
-    width: calc(100vw - 140px);
-    gap: 20px;
-    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    /* flexアイテムを折り返す */
+    gap: 10px;
 }
 
 .works_item {
-    height: 50vh;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: top;
-    align-items: center;
-    border-radius: 20px;
+    flex: 0 0 calc(50% - 10px);
+    /* 列幅の設定 */
+    max-width: calc(50% - 10px);
+    /* 最大幅の設定 */
+    height: auto;
+    /* 高さの自動調整 */
+    margin-bottom: 10px;
+    /* 下の余白 */
+}
+
+.works_item img {
+    width: 100%;
+    height: auto;
     box-shadow: 0 0 12px rgba(0, 0, 0, 0.16);
+    border-radius: 20px;
 }
 
-@media (max-width: 800px) {
-    .content_flex {
-        grid-template-columns: 1fr;
-    }
-    .works_item {
-        height: 38vh;
-    }
+.title {
+    margin-top: 40px;
+    padding: 5px;
+    /* 内側の余白 */
+    font-size: 1rem;
 }
 
-@media (min-width: 801px) and (max-width: 1200px) {
+@media (max-width: 768px) {
     .works_item {
-        height: 38vh;
-    }
-}
-@media (min-width: 801px) and (max-width: 980px) {
-    .works_item {
-        height: 30vh;
-    }
-}
-
-@media (min-width: 1201px) {
-    .works_item {
-        height: 50vh;
+        flex: 0 0 calc(100% - 10px);
+        /* 1列にスタックする */
+        max-width: calc(100% - 10px);
     }
 }
 
 @media (max-width: 600px) {
-    .works_grid {
-        padding: 20px 16px 10px 16px;
-    }
-    .content_flex {
-        width: calc(100vw - 32px);
-    }
-
     .flex {
         display: block;
-    }
-
-    .grid {
-        height: 8vh;
-    }
-}
-
-@media (max-width: 480px) {
-    .works_item {
-        height: 32vh;
-    }
-}
-@media (max-width: 400px) {
-    .works_item {
-        height: 28vh;
     }
 }
 
@@ -218,26 +296,4 @@ nav a {
     letter-spacing: 1.5px;
     font-size: 1.2rem;
     color: #000;
-}
-
-.Works_01 {
-    background-image: url(../image/salon_mockup.png);
-}
-
-.Works_02 {
-    background-image: url(../image/eyelash_mockup.png);
-}
-
-.Works_03 {
-    background-image: url(../image/travelapp_mockup.png);
-}
-
-.Works_04 {
-    background-image: url(../image/banner_mockup.png);
-}
-.Works_05 {
-    background-image: url(../image/logo_mockup.png);
-}
-.Works_06 {
-    background-image: url(../image/portfolio2024_mockup.png);
 }
