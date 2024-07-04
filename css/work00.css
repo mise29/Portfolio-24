@@ -88,6 +88,9 @@ button:hover {
 }
 
 @media screen and (max-width:768px) {
+    .worksDetail {
+        padding: 0 20px;
+    }
     .worksDetail h1 {
         font-size: 1.6rem;
         margin-top: 34px;
@@ -172,4 +175,13 @@ button:hover {
 .prev:hover, .next:hover {
     color: white;
     background-color: rgba(0, 0, 0, 0.8);
+}
+
+.all {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 60px;
+}
+.all img {
+    width: 100%;
 }

@@ -267,10 +267,10 @@ nav a {
 }
 
 .title {
-    margin-top: 40px;
-    padding: 5px;
-    /* 内側の余白 */
-    font-size: 1rem;
+    margin-top: 20px;
+    padding: 10px 0;
+    letter-spacing: 1.2px;
+    font-size: 1.12rem;
 }
 
 @media (max-width: 768px) {
@@ -285,6 +285,9 @@ nav a {
     .flex {
         display: block;
     }
+    .works_grid {
+        margin-left: 10px;
+    }
 }
 
 .content_flex p {
@@ -295,5 +298,10 @@ nav a {
 .works_text p {
     letter-spacing: 1.5px;
     font-size: 1.2rem;
+    color: #000;
+}
+
+.content_flex a {
+    text-decoration: none;
     color: #000;
 }
