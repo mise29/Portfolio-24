@@ -223,3 +223,12 @@ p {
         margin-top: 2rem;
     }
 }
+
+.fullPage {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.fullPage img {
+    padding: 40px 100px 80px 100px;
+    width: 50%;
+}
