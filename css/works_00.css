@@ -227,8 +227,14 @@ p {
 .fullPage {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    padding: 40px 100px 80px 100px;
 }
 .fullPage img {
-    padding: 40px 100px 80px 100px;
     width: 50%;
+}
+
+@media screen and (max-width:768px) {
+    .fullPage {
+        padding: 0 20px;
+    }
 }
