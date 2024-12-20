@@ -1,10 +1,9 @@
 @charset "utf-8";
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
 
 body {
     margin: 0;
     box-sizing: border-box;
-    font-family: "Noto Sans JP", sans-serif;
+    font-family: "YakuHanJP_Narrow", "Zen Kaku Gothic New", sans-serif;
 }
 
 .grid {
@@ -202,17 +201,25 @@ nav a {
     margin-top: 20px;
     display: flex;
     align-items: center;
+    width: 100%;
+    height: auto;
+    border: 2px solid #f6bfbc;
+    border-radius: 10px;
+    padding: 6px 0 10px 0;
+    justify-content: center;
 }
 
 .page_title p {
     margin: 0;
-    font-size: 1.6rem;
+    font-size: 40px;
     letter-spacing: 1.5px;
     margin-right: 8px;
 }
 
 .page_title i {
-    font-size: 1.2rem;
+    font-size: 36px;
+    padding-top: 6px;
+    padding-left: 10px;
 }
 
 .works_item:hover {
@@ -246,6 +253,7 @@ nav a {
     flex-wrap: wrap;
     /* flexアイテムを折り返す */
     gap: 10px;
+    margin-top: 20px;
 }
 
 .works_item {
@@ -308,3 +316,69 @@ nav a {
     text-decoration: none;
     color: #000;
 }
+
+.menu {
+    font-size: 12px;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    padding: 10px 20px;
+    color: black;
+    text-decoration: none;
+}
+
+.menu span {
+    position: absolute;
+    top: 62px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    line-height: 1.5;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.menu:hover .japanese {
+    opacity: 1;
+}
+
+.menu:hover:nth-of-type(3),
+.menu:hover:nth-of-type(4) {
+    font-size: 10px;
+}
+
+.menu .english {
+    opacity: 1;
+}
+.menu:hover .english {
+    opacity: 0;
+}
+
+.hover-text {
+    position: absolute;
+    top: 56%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 80px;
+    height: 80px;
+    padding: 40px;
+    border-radius: 100%;
+    font-size: 16px;
+    opacity: 0; 
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+  }
+
+  .hover-text p {
+    position: relative;
+    top: 56%;
+    left: 50%;
+    transform: translate(-50%, -50%);  
+  }
+  
+  .works_item:hover .hover-text {
+    opacity: 1;
+  }

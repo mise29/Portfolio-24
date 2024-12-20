@@ -1,8 +1,7 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
+@charset "utf-8";
 
 body {
-    font-family: "Noto Sans JP", sans-serif;
+    font-family: "YakuHanJP_Narrow", "Zen Kaku Gothic New", sans-serif;
     justify-content: center;
     align-items: center;
     margin: 0;
@@ -19,14 +18,16 @@ body {
 
 .back_btn span {
     color: #212121;
-    font-weight: normal;
+    font-weight: 500;
+    font-size: 14px;
 }
 
 button {
-    font-family: "Noto Sans JP", sans-serif;
+    font-family: "YakuHanJP_Narrow", "Zen Kaku Gothic New", sans-serif;
     display: flex;
-    height: 3em;
-    width: 100px;
+    height: 40px;
+    width: auto;
+    padding: 0 20px;
     align-items: center;
     justify-content: center;
     letter-spacing: 1px;
@@ -34,10 +35,11 @@ button {
     cursor: pointer;
     border: none;
     background: #fff;
-    border: 1px solid #212121;
+    border: 1.2px solid #333;
     border-radius: 20px;
-    font-weight: bold;
+    font-weight: 600;
 }
+
 
 button>svg {
     margin-right: 5px;

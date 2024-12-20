@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HiranoMiyu_portfolio</title>
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;700&display=swap"
+        rel="stylesheet">
     <script src="https://kit.fontawesome.com/5388a13b3e.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
@@ -17,20 +19,28 @@
         <div class="item sticky">
             <nav>
                 <ul class="icon">
-                    <i class="fa-solid fa-house navIcon"></i>
-                    <p>Top</p>
-                    <a href="works.html"><i class="fa-solid fa-pen-nib navIcon"></i>
-                        <p>Work</p>
+                    <a href="#" class="menu">
+                        <i class="fa-solid fa-house navIcon"></i>
+                        <span class="english">Top</span>
+                        <span class="japanese">トップ</span>
                     </a>
-                    <a href="about.html"><i class="fa-solid fa-user navIcon"></i>
-                        <p>About</p>
+
+                    <a href="works.html" class="menu"><i class="fa-solid fa-pen-nib navIcon"></i>
+                        <span class="english">Work</span>
+                        <span class="japanese">制作物</span>
                     </a>
-                    <a href="#contact_page"><i class="fa-solid fa-envelope navIcon"></i>
-                        <p>Contact</p>
+                    <a href="about.html" class="menu"><i class="fa-solid fa-user navIcon"></i>
+                        <span class="english">About</span>
+                        <span class="japanese">私について</span>
                     </a>
-                    <a href="https://github.com/mise29" target="_blank">
+                    <a href="#contact_page" class="menu"><i class="fa-solid fa-envelope navIcon"></i>
+                        <span class="english">Contact</span>
+                        <span class="japanese">お問い合わせ</span>
+                    </a>
+                    <a href="https://github.com/mise29" target="_blank" class="menu">
                         <i class="fa-brands fa-github"></i>
-                        <p>GitHub</p>
+                        <span class="english">GitHub</span>
+                        <span class="japanese">GitHub</span>
                     </a>
                 </ul>
             </nav>
@@ -166,23 +176,15 @@
                         <div class="form_img">
                             <img src="image/contactform.png" alt="contactform">
                         </div>
-                        <form class="auto">
-                            <label for="name">Name</label>
-                            <input type="text" id="name" name="name" required>
-
-                            <label class="form_margin" for="email">Email</label>
-                            <input type="email" id="email" name="email" required>
-
-                            <label class="form_margin" for="message">Message</label>
-                            <textarea id="message" name="message" rows="4" required></textarea>
-
-                            <button class="send_btn" type="submit">
-                                <p>SEND</p>
-                            </button>
-                        </form>
+                        <div class="newmail">
+                            <p>下記のメールアドレスにお気軽にご連絡ください。<br>ご意見・ご感想お待ちしております。</p>
+                            <div class="contact-section">
+                                <a href="mailto:your-email@example.com">miissei2929@gmail.com</a>
+                            </div>
+                        </div>
 
                         <div class="copyright">
-                            <p class="copyName">All Rights Reserved 2023 © Miyu Hirano</p>
+                            <p class="copyName">All Rights Reserved 2024 © Miyu Hirano</p>
                         </div>
                     </div>
                 </section>

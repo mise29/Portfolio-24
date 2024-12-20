@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HiranoMiyu_portfolio</title>
     <link rel="stylesheet" href="css/about.css">
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;700&display=swap"
+        rel="stylesheet">
     <script src="https://kit.fontawesome.com/5388a13b3e.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
@@ -18,21 +20,28 @@
         <div class="item sticky">
             <nav>
                 <ul class="icon">
-                    <a href="index.html"><i class="fa-solid fa-house navIcon"></i>
-                        <p>Top</p>
+                    <a href="index.html" class="menu">
+                        <i class="fa-solid fa-house navIcon"></i>
+                        <span class="english">Top</span>
+                        <span class="japanese">トップ</span>
                     </a>
-                    <a href="works.html"><i class="fa-solid fa-pen-nib navIcon"></i>
-                        <p>Work</p>
+
+                    <a href="works.html" class="menu"><i class="fa-solid fa-pen-nib navIcon"></i>
+                        <span class="english">Work</span>
+                        <span class="japanese">制作物</span>
                     </a>
-                    <a href="about.html"><i class="fa-solid fa-user navIcon"></i>
-                        <p>About</p>
+                    <a href="about.html" class="menu"><i class="fa-solid fa-user navIcon"></i>
+                        <span class="english">About</span>
+                        <span class="japanese">私について</span>
                     </a>
-                    <a href="index.html#contact_page"><i class="fa-solid fa-envelope navIcon"></i>
-                        <p>Contact</p>
+                    <a href="index.html#contact_page" class="menu"><i class="fa-solid fa-envelope navIcon"></i>
+                        <span class="english">Contact</span>
+                        <span class="japanese">お問い合わせ</span>
                     </a>
-                    <a href="https://github.com/mise29" target="_blank">
+                    <a href="https://github.com/mise29" target="_blank" class="menu">
                         <i class="fa-brands fa-github"></i>
-                        <p>GitHub</p>
+                        <span class="english">GitHub</span>
+                        <span class="japanese">GitHub</span>
                     </a>
                 </ul>
             </nav>
@@ -41,15 +50,31 @@
         <section class="about_more">
 
             <div class="page_title">
-                <p>About</p><i class="fa-solid fa-user navIcon"></i>
+                <div class="entext">
+                    <div class="entextandicon">
+                        <p>About Me</p><i class="fa-solid fa-user navIcon"></i>
+                    </div>
+                    <!-- <div class="jataxt"><span>私について</span></div> -->
+                </div>
+
+                <div class="profilebox">
+                    <div class="profiletext">
+                        <h3 class="janame">ひらの　みゆ</h3>
+                        <h4>2003年生まれ。茨城県出身。<br>現在、TECH.C.のWebクリエイター専攻で学んでいます。<br>これまでに、ランディングページやバナーのデザイン制作、HTML/CSSを中心としたコーディング、さらに授業で習ったjQueryを用いた動きのある実装にも取り組んできました。
+                        </h4>
+                        <h4>日常生活で目にする「使いやすさ」や「美しさ」に惹かれ、Webデザインの世界に興味を持つようになり、ユーザー体験を重視したデザイン制作を目指しています。どんな課題にも「丁寧さ」と「細部へのこだわり」を大切にしており、見る人にインパクトを与えつつも使いやすいデザインを追求しています。
+                        </h4>
+                        <h4>趣味はアフタヌーンティーや流行りのカフェ、季節ごとのイベントに友人と出かけて楽しむことです。それが発想力や表現力を豊かにする糧になっています。</h4>
+                        <h4>これからも新しい技術や知識を吸収し、流行に敏感に生き、ユーザーにとって価値のあるデザインを提供できるWebデザイナーを目指していきます。</h4>
+                    </div>
+                    <div class="profileimage"></div>
+                </div>
             </div>
 
             <div class="about_grid">
-                <div class="about_item item_profile">
-                    <!-- <div class="profile_image"></div>
-                    <div class="profile_image pi_02"></div> -->
+                <!-- <div class="about_item item_profile">
                     <div class="profile_text">
-                        <h2>Profile</h2>
+                        <h2>Profile<span>ープロフィールー</span></h2>
                         <ul class="my_list">
                             <li>Name：Hirano Miyu</li>
                             <li>Birthplace：Ibaraki</li>
@@ -58,9 +83,9 @@
                             <li>School：TECH.C. Web creator major</li>
                         </ul>
                     </div>
-                </div>
+                </div> -->
                 <div class="about_item item_skills">
-                    <h2>Skills</h2>
+                    <h2>Skills<span>ーできることー</span></h2>
                     <div class="bar">
                         <dl class="bar-chart-002">
                             <div>
@@ -112,12 +137,13 @@
                 </div>
 
                 <div class="about_item item_history">
-                    <h2>My History</h2>
+                    <h2>My History<span>ー私の歴史ー</span></h2>
                     <div class="timeline">
                         <ul class="timeline-list">
                             <li class="timeline-list-item">
                                 <div class="date">2003年12月</div>
-                                <div class="content">茨城県に生まれる<br><span>小さいころから人と話すことや可愛いものを見て真似すること、創ることが好きでした。</span></div>
+                                <div class="content">茨城県に生まれる<br><span>小さいころから人と話すことや可愛いものを見て真似すること、創ることが好きでした。</span>
+                                </div>
                             </li>
                             <li class="timeline-list-item">
                                 <div class="date">2022年3月</div>
@@ -128,7 +154,8 @@
                             <li class="timeline-list-item">
                                 <div class="date">2022年3月</div>
                                 <div class="content">
-                                    Webに興味を持ち、ITの専門学校に入学<br><span>何もかも未知でしたが、入学前のコーディング体験授業で自分で作り上げたものが即座に視覚化されることへの大きな達成感と楽しさを覚え、入学を決意しました。</p>
+                                    Webに興味を持ち、ITの専門学校に入学<br><span>何もかも未知でしたが、入学前のコーディング体験授業で自分で作り上げたものが即座に視覚化されることへの大きな達成感と楽しさを覚え、入学を決意しました。
+                                        </p>
                                     </span></div>
                             </li>
                             <li class="timeline-list-item">
@@ -141,6 +168,12 @@
                                 <div class="date">2023年10月</div>
                                 <div class="content">
                                     HCDに興味を持つ<br><span>UI/UXの授業を通して、日常生活において「使いやすい」「使いにくい」という観点に敏感になり、視覚的に分かりやすいデザインへの興味が深まりました。特に、気になるアプリをインストールして、そのUIデザインやユーザビリティを観察するようになりました。</span>
+                                </div>
+                            </li>
+                            <li class="timeline-list-item">
+                                <div class="date">2024年10月</div>
+                                <div class="content">
+                                    HCD基礎検定の取得に向けて勉強<br><span>ユーザー視点で課題を発見し、解決策を考えるプロセスに関心を持ち、HCDの基礎知識を体系的に学ぶための勉強を始めました。2月に行われる試験に合格することを目標に勉強しています。</span>
                                 </div>
                             </li>
                         </ul>
