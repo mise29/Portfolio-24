@@ -507,7 +507,7 @@ button p:hover {
     }
 
     .about_grid {
-        grid-template: 40vh / 1fr 1fr;
+        grid-template: 70vh / 1fr 1fr;
     }
 
     .small_box:nth-of-type(4) {
@@ -638,13 +638,36 @@ textarea {
 }
 
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:800px) {
     .contact_grid {
         display: block;
     }
 
     .form_img {
         display: none;
+    }
+    .newmail {
+        padding: 60px 0;
+    }
+    .copyName {
+        margin-top: 40px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .contact_grid {
+        display: block;
+    }
+    .form_img {
+        display: none;
+    }
+
+    .newmail {
+        padding: 60px 0;
+    }
+
+    .newmail p {
+        font-size: 14px;
     }
 
     input,
@@ -658,7 +681,7 @@ textarea {
 
     .copyName {
         padding-left: 0;
-        margin-top: 10px;
+        margin-top: 40px;
         margin-left: 8px;
         font-size: 0.6rem;
     }
@@ -748,4 +771,31 @@ textarea {
 
 .menu02:hover .english02 {
     opacity: 0;
+}
+
+@media screen and (max-width:600px) {
+    .sticky i {
+        font-size: 18px;
+    }
+    .menu {
+        font-size: 10px;
+        display: inline-block;
+        position: relative;
+        cursor: pointer;
+        padding: 0 20px;
+        color: black;
+        text-decoration: none;
+    }
+    
+    .menu span {
+        position: absolute;
+        top: 17px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        text-align: center;
+        line-height: 1.5;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
 }
